@@ -67,7 +67,17 @@
   </div>
 
   <div id="app" class="hidden">
-  
+        <div class="card-container hidden" id="cardContainer">
+      <div class="profile-card" id="profileCard">
+      <img alt="Foto de perfil" src="" class="profile-pic"/>
+      <h3 id="nombreUsuario"></h3>
+      <p id="info"></p>
+        <div class="card-buttons">
+          <button onclick="dislike()">❌</button>
+          <button onclick="like()">❤️</button>
+        </div>
+      </div>
+      </div>  
   </div>
 
   <audio id="introMusic" src="assets/havanagila.mp3" preload="auto"></audio>
