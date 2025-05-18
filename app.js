@@ -127,19 +127,6 @@ async function submitLogin() {
       let appHtml = document.getElementById("app")
       appHtml.classList = ""
       
-      appHtml.innerHTML = `    
-      <div class="card-container hidden" id="cardContainer">
-      <div class="profile-card" id="profileCard">
-      <img alt="Foto de perfil" src="" class="profile-pic"/>
-      <h3 id="nombre"></h3>
-      <p id="info"></p>
-        <div class="card-buttons">
-          <button onclick="dislike()">❌</button>
-          <button onclick="like()">❤️</button>
-        </div>
-      </div>
-      </div>  
-    `
 
     cargarPerfiles(userData.genero, userData.email);
 
@@ -190,7 +177,7 @@ async function cargarPerfiles(generoActual, emailActual) {
       }
 
       const persona = perfilesFiltrados[indice];
-      document.getElementById("nombre").innerText = persona.nombre + " " + persona.apellido;
+      document.getElementById("nombreUsuario").innerText = `${persona.nombre + " " + persona.apellido}`;
       document.getElementById("info").innerText = `${calcularEdad(persona.nacimiento)} años • ${persona.grupo} • ${persona.genero}`;
       document.querySelector(".profile-pic").src = persona.foto || "https://via.placeholder.com/300x300?text=Sin+foto";
     }
