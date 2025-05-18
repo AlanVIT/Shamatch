@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shamatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="intro" id="intro">
+    <img src="assets/logo.png" class="logo" alt="Logo Shamatch" />
+    <h1>Shamatch</h1>
+    <p>El match que tu bobe aprobaría ❤️</p>
+    <button onclick="startApp()">Entrar</button>
+  </div>
+
+  <div class="container hidden" id="mainApp">
+    <h2>Bienvenido a Shamatch</h2>
+    <p>Elegí una opción para comenzar:</p>
+    <div class="buttons">
+      <button onclick="showRegister()">Registrarse</button>
+      <button onclick="showLogin()">Iniciar Sesión</button>
+    </div>
+  </div>
+
+  <audio id="introMusic" src="assets/havanagila.mp3" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
