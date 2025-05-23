@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chats - Shamatch</title>
+  <script src="https://www.gstatic.com/firebasejs/11.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="chats.css">
+</head>
+<body>
+    <header id="userHeader" class="hidden">
+    <div class="user-icons">
+      <a href="index.html"><img src="assets/logo.png" class="logo" alt="Logo Shamatch"></a>   
+      <a href="perfil.html"><img src="assets/perfil.png" alt="Perfil"></a>
+      <a href="chats.html"><img src="assets/chat.jpg" alt="Chat"></a>
+      <button onclick="cerrarSesion()" id="logoutBtn">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <h2>Mis Chats</h2>
+  <div id="chatContainer">Cargando chats...</div>
+
+  <script src="chats.js"></script>
+</body>
+</html>
